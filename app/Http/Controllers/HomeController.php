@@ -13,7 +13,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'title' => 'Halaman Utama'
+        ];
+
+        return view('index', $data);
     }
 
     /**
@@ -27,7 +31,7 @@ class HomeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreHomeModelRequest $request)
+    public function store()
     {
         //
     }
@@ -51,7 +55,7 @@ class HomeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateHomeModelRequest $request, HomeModel $homeModel)
+    public function update(HomeModel $homeModel)
     {
         //
     }
