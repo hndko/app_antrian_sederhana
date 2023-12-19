@@ -14,4 +14,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::resource('home', HomeController::class);
+Route::get('home', [HomeController::class, 'index']);
+Route::get('antri_cs/{id}/{id1}/{id2}', [HomeController::class, 'antri_cs']);
+Route::get('antri_teller1/{id}/{id1}/{id2}', [HomeController::class, 'antri_teller1']);
+Route::get('antri_teller2/{id}/{id1}/{id2}', [HomeController::class, 'antri_teller2']);

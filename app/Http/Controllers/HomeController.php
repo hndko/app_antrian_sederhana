@@ -71,4 +71,40 @@ class HomeController extends Controller
     {
         //
     }
+
+    public function antri_cs($cs, $teller1, $teller2)
+    {
+        $data = [
+            'antri_cs' => $cs + 1,
+            'antri_teller1' => $teller1,
+            'antri_teller2' => $teller2,
+            'antri' => "cs",
+        ];
+
+        return view('index', $data);
+    }
+
+    public function antri_teller1($cs, $teller1, $teller2)
+    {
+        $data = [
+            'antri_cs' => $cs,
+            'antri_teller1' => $teller1 + 1,
+            'antri_teller2' => $teller2,
+            'antri' => "tl1",
+        ];
+
+        return view('index', $data);
+    }
+
+    public function antri_teller2($cs, $teller1, $teller2)
+    {
+        $data = [
+            'antri_cs' => $cs,
+            'antri_teller1' => $teller1,
+            'antri_teller2' => $teller2 + 2,
+            'antri' => "tl2",
+        ];
+
+        return view('index', $data);
+    }
 }
