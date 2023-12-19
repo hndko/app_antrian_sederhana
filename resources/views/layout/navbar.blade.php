@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
-        <a class="navbar-brand px-2" href="">Dot</a>
+        <a class="navbar-brand px-2" href="">{{ $title }}</a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

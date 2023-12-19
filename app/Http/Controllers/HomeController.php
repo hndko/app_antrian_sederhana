@@ -14,7 +14,11 @@ class HomeController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Halaman Utama'
+            'title' => 'Aplikasi Antrian Menggunakan Laravel',
+            'antri_cs' => 0,
+            'antri_teller1' => 0,
+            'antri_teller2' => 0,
+            'antri' => "-",
         ];
 
         return view('index', $data);

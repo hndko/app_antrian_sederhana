@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dot</title>
+    <title>{{ $title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- theme meta -->
@@ -28,7 +28,7 @@
 <body>
     <!-- header -->
     <header class="banner overlay bg-cover" data-background="{{ asset('assets/images/banner.jpg') }}">
-        @include('layout.navbar')
+        {{-- @include('layout.navbar') --}}
         @include('layout.banner')
     </header>
     <!-- /header -->
