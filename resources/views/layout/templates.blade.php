@@ -49,8 +49,8 @@
             var audio = new Audio("{{ asset('audio/cs1.mp3') }}");
             audio.play();
             audio.addEventListener('ended', function() {
-                location.href = "/antri_cs/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
-                    {{ antri_teller2 }}
+                location.href = "/antri_cs/" + {{ $antri_cs }} + "/" + {{ $antri_teller1 }} + "/" +
+                    {{ $antri_teller2 }}
             })
         }
 
@@ -58,8 +58,8 @@
             var audio = new Audio("{{ asset('audio/t1.mp3') }}");
             audio.play();
             audio.addEventListener('ended', function() {
-                location.href = "/antri_teller1/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
-                    {{ antri_teller2 }}
+                location.href = "/antri_teller1/" + {{ $antri_cs }} + "/" + {{ $antri_teller1 }} + "/" +
+                    {{ $antri_teller2 }}
             })
         }
 
@@ -67,8 +67,8 @@
             var audio = new Audio("{{ asset('audio/t2.mp3') }}");
             audio.play();
             audio.addEventListener('ended', function() {
-                location.href = "/antri_teller2/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
-                    {{ antri_teller2 }}
+                location.href = "/antri_teller2/" + {{ $antri_cs }} + "/" + {{ $antri_teller1 }} + "/" +
+                    {{ $antri_teller2 }}
             })
         }
     </script>

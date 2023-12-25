@@ -75,6 +75,7 @@ class HomeController extends Controller
     public function antri_cs($cs, $teller1, $teller2)
     {
         $data = [
+            'title' => 'Aplikasi Antrian Menggunakan Laravel',
             'antri_cs' => $cs + 1,
             'antri_teller1' => $teller1,
             'antri_teller2' => $teller2,
@@ -87,6 +88,7 @@ class HomeController extends Controller
     public function antri_teller1($cs, $teller1, $teller2)
     {
         $data = [
+            'title' => 'Aplikasi Antrian Menggunakan Laravel',
             'antri_cs' => $cs,
             'antri_teller1' => $teller1 + 1,
             'antri_teller2' => $teller2,
@@ -99,9 +101,10 @@ class HomeController extends Controller
     public function antri_teller2($cs, $teller1, $teller2)
     {
         $data = [
+            'title' => 'Aplikasi Antrian Menggunakan Laravel',
             'antri_cs' => $cs,
             'antri_teller1' => $teller1,
-            'antri_teller2' => $teller2 + 2,
+            'antri_teller2' => $teller2 + 1,
             'antri' => "tl2",
         ];
 
