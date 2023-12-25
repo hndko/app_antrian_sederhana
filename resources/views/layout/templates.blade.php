@@ -44,6 +44,34 @@
     <script src="{{ asset('assets/plugins/match-height/jquery.matchHeight-min.js') }}"></script>
     <!-- Main Script -->
     <script src="{{ asset('assets/script.js') }}"></script>
+    <script>
+        function cs() {
+            var audio = new Audio("{{ asset('audio/cs1.mp3') }}");
+            audio.play();
+            audio.addEventListener('ended', function() {
+                location.href = "/antri_cs/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
+                    {{ antri_teller2 }}
+            })
+        }
+
+        function teller1() {
+            var audio = new Audio("{{ asset('audio/t1.mp3') }}");
+            audio.play();
+            audio.addEventListener('ended', function() {
+                location.href = "/antri_teller1/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
+                    {{ antri_teller2 }}
+            })
+        }
+
+        function teller2() {
+            var audio = new Audio("{{ asset('audio/t2.mp3') }}");
+            audio.play();
+            audio.addEventListener('ended', function() {
+                location.href = "/antri_teller2/" + {{ antri_cs }} + "/" + {{ antri_teller1 }} + "/" +
+                    {{ antri_teller2 }}
+            })
+        }
+    </script>
 </body>
 
 </html>
